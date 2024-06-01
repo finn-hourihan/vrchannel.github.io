@@ -10,6 +10,16 @@ img{
 }*/
 
 
+.m1{
+    background-color: rgb(234, 4, 27);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color:black
+
+}
+
 .red{
     color: rgb(234, 4, 27);
     margin-left:auto;
