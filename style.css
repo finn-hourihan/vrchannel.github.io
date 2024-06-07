@@ -28,4 +28,11 @@ img{
 
 .container{
     text-align: center;
+
+}
+.btn{
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: 6px 10px #0c0c0c;
 }
