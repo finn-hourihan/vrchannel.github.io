@@ -49,6 +49,12 @@
 .imgcontainer{
     display:flex;
     justify-content: center;
+    margin-left: auto;
+    margin-left: -150px;
+    margin-right: auto;
    
-   
+}
+
+.imgcontainer button{
+    margin-right: 10px;
 }
