@@ -30,9 +30,23 @@ img{
     text-align: center;
 
 }
+
+.outcontainer{
+    text-align: center;
+    font-size: 36px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:  rgb(234, 4, 27);
+    color: black;
+
+
+}
 .btn{
     padding: 0;
     border: none;
     background: none;
     box-shadow: 6px 10px #0c0c0c;
+}
+
+.imgcontainer{
+    display:flex
 }
