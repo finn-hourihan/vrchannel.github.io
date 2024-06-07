@@ -1,4 +1,4 @@
-img{
+.img{
     display: block;
     margin-left:auto;
     margin-right:auto;
@@ -48,7 +48,7 @@ img{
 
 .imgcontainer{
     display:flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+   
    
 }
