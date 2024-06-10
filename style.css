@@ -1,7 +1,16 @@
 .img{
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-left:auto;
     margin-right:auto;
+}
+
+.img img{
+    width: 80%;
+    height: auto;
+    max-width: 90%;
+
+    
 }
 
 .titletext{
@@ -23,6 +32,20 @@
 
 }
 
+.ss{
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.ss img{
+    flex-shrink: 1;
+    height: auto;
+    max-width: 45%;
+    margin: 5px;
+}
 .red{
     color: rgb(234, 4, 27);
     margin-left:auto;
@@ -30,8 +53,18 @@
 }
 
 .container{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+
+.container img{
+    width: 99%;
+    height: auto;
+    max-width: 95%;
+    min-width: 75%;
 }
 
 .outcontainer{
@@ -49,7 +82,7 @@
     background: none;
 }
 
-.imgcontainer{
+.btnimgcontainer{
     display:flex;
     justify-content: center;
     margin-left: auto;
