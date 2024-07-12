@@ -87,6 +87,14 @@
 
 
 }
+
+.outcontainersmall{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(234, 4, 27);
+
+
+}
 .btn{
     padding: 0;
     border: none;
