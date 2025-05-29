@@ -18,6 +18,20 @@
     padding-top: 16px;
   
 }
+
+.imgtitlesub{
+    height: 139px;
+    width: 386px;
+    justify-content: left;
+    padding-top: 16px;
+  
+}
+
+.imgtitlesub:hover{
+    content: url("vrmaindr.png");
+  
+}
+
 body{
     margin: 0px;
 }
@@ -46,7 +60,7 @@ body{
 }
 .navbar a{
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:  rgb(234, 4, 27);
+    -webkit-text-stroke-color: white;
     color: black;
     text-decoration: none;
     padding-left: 25px;
@@ -54,8 +68,15 @@ body{
     display: block;
    
 }
+.navbar a.active{
+    color: rgb(234, 4, 27);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(234, 4, 27);
+}
+
 .navbar a:hover{
-    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(234, 4, 27);
 }
 .navbar li{
     float: left;
