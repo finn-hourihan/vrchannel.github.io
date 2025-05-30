@@ -40,6 +40,12 @@ body{
     border-top: 3px solid rgb(234, 4, 27);
     border-right: 3px solid rgb(234, 4, 27);
     border-left: 3px solid rgb(234, 4, 27);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+    border-bottom: 3px solid rgb(234, 4, 27);
+
 }
 
 .navbar ul{
@@ -48,7 +54,7 @@ body{
     padding: 0px;
     margin: 0px;
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: wrap;
     overflow: hidden;
     font-size: 50px;
     font-family: 'Gaz'
@@ -126,23 +132,21 @@ body{
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom: 3px solid rgb(234, 4, 27);
-    border-top: 3px solid rgb(234, 4, 27);
     color:rgb(234, 4, 27);
 
 }
 
 .ss{
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+   
    
 }
 
 .ss img{
     flex-shrink: 1;
-    height: auto;
-    max-width: 45%;
+    width: 45%;
     margin: 5px;
 }
 .red{
@@ -194,6 +198,7 @@ body{
 
 .btnimgcontainer{
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
  
    
@@ -216,6 +221,52 @@ body{
 
 @media (max-width: 768px) {
     .navbar ul {
+        font-size: 28px;
+        justify-content: space-evenly; /* Adjust spacing */
+        flex-wrap: wrap;
+
+    }
+
+    .imgtitle {
+        max-width: 210px; /* try smaller until it fits */
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .imgtitlesub {
+        max-width: 210px; /* try smaller until it fits */
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .navtext {
+        padding-top: 30px; /* Reduce padding */
+    }
+
+    .navbar a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .m1 {
+        font-size: 35px;
+    }
+    .outcontainer{
+        font-size: 22px;
+    }
+    .outcontainersmall{
+       font-size: 18px;
+    
+    }
+ 
+    .ss img{
+        width: 80%;
+        margin: 5px;
+    }
+}
+
+
+@media (max-width:430px) {
+    .navbar ul {
         font-size: 20px;
         justify-content: space-evenly; /* Adjust spacing */
         flex-wrap: wrap;
@@ -234,7 +285,7 @@ body{
     }
 
     .navtext {
-        padding-top: 14px; /* Reduce padding */
+        padding-top: 16px; /* Reduce padding */
     }
 
     .navbar a {
@@ -243,5 +294,46 @@ body{
     }
     .m1 {
         font-size: 25px;
+    }
+    .outcontainer{
+        font-size: 12px;
+    }
+    .outcontainersmall{
+        font-size: 10px;
+     
+     }
+     .ss img{
+        width: 90%;
+        margin: 5px;
+    }
+}
+
+
+@media (max-width:390px) {
+    .navtext {
+        padding-top: 0px; /* Reduce padding */
+        padding-bottom: 0px;
+        justify-content: space-evenly;
+    }
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* or space-evenly / space-between */
+        align-items: center;
+    }
+    .imgtitle {
+        max-width: 180px; /* try smaller until it fits */
+        height: auto;
+        padding-top: 5px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .imgtitlesub {
+        max-width: 180px; /* try smaller until it fits */
+        height: auto;
+        padding-top: 5px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
