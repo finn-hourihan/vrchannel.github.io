@@ -47,6 +47,8 @@ body{
     background-color: black;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-wrap:nowrap;
     overflow: hidden;
     font-size: 50px;
     font-family: 'Gaz'
@@ -80,6 +82,7 @@ body{
 }
 .navbar li{
     float: left;
+    white-space: nowrap;
 }
 
 .center{
@@ -197,86 +200,48 @@ body{
 }
 
 .btnimgcontainer img{
-    flex-shrink: 1;
     height: auto;
-    margin: 5px;
+    max-width: 100%;
    
+}
+.btnimgcontainer a{
+    height: auto;
+    max-width: 100%;
+  
 }
 
 .imgcontainer button{
     margin-right: 10px;
 }
 
+@media (max-width: 768px) {
+    .navbar ul {
+        font-size: 20px;
+        justify-content: space-evenly; /* Adjust spacing */
+        flex-wrap: wrap;
+    }
 
-.jo-marq-container {
-    display: flex !important;
-    flex-direction: row;
+    .imgtitle {
+        max-width: 120px; /* try smaller until it fits */
+        height: auto;
+        padding-top: 5px;
+    }
+
+    .imgtitlesub {
+        max-width: 120px; /* try smaller until it fits */
+        height: auto;
+        padding-top: 5px;
+    }
+
+    .navtext {
+        padding-top: 14px; /* Reduce padding */
+    }
+
+    .navbar a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .m1 {
+        font-size: 25px;
+    }
 }
-
-
-.jo-marq-conatiner {
-    /* width: 450px;
-    height: 450px;
-    text-align: center;
-    background-color: red;
-    color: white; */
-        
-    /* box-sizing: border-box;
-    display: block;
-	overflow: hidden ;
-	white-space: nowrap ; */
-    height: 200px;
-    width: 420px;
-  
-    overflow: hidden;
-    position: relative;
-    }
-    
-.jo-marq-conatiner div {
-    display: block;
-    width: 100%;
-    height: 200px;
-  
-    position: absolute;
-    overflow: hidden;
-  
-    animation: jo-marq-animate 1s linear infinite;
-  
-}
-
-  .jo-marq-item {
-    /* animation-duration: 1s ; */
-	/* animation-iteration-count: infinite ;
-	animation-name: jo-marq-animate ;
-	animation-timing-function: linear ;
-	padding: 5px 15px 5px 15px ;
-    display: block;
-  width: 200%;
-  height: 30px; */
-
-  position: absolute;
-  overflow: hidden;
-    /* display: inline-block;
-    padding-top: 100%;
-    animation: marquee 2s linear infinite; */
-  }
-
-  @keyframes jo-marq-animate {
-    /* 0%   { transform: translate(0, 0); }
-     100% { transform: translate(0, -100%); }  */
-    /* from {
-        transform: translateX( 0% );
-    }
-    to {
-        transform: translateX( -100% );
-    } */
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(-100%, 0, 0);
-    }
-  
-    
-  }
