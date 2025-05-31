@@ -240,6 +240,24 @@ body{
     margin-right: 10px;
 }
 
+.works{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+}
+.works img{
+    max-width: 850px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+
+
 @media (max-width: 768px) {
     .navbar ul {
         font-size: 28px;
@@ -283,6 +301,15 @@ body{
         width: 80%;
         margin: 5px;
     }
+    
+    .works img{
+        max-width: 700px;
+        height: auto;
+        width: auto;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+    
 }
 
 
@@ -327,6 +354,13 @@ body{
         width: 90%;
         margin: 5px;
     }
+    .works img{
+        max-width: 400px;
+        height: auto;
+        width: auto;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
 }
 
 
@@ -356,5 +390,12 @@ body{
         padding-top: 5px;
         padding-left: 100px;
         padding-right: 100px;
+    }
+    .works img{
+        max-width: 350px;
+        height: auto;
+        width: auto;
+        object-fit: contain;
+        flex-shrink: 0;
     }
 }
