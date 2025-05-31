@@ -256,7 +256,20 @@ body{
 }
 
 
-
+.product{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+}
+.product img{
+    max-width: 500px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 
 @media (max-width: 768px) {
     .navbar ul {
