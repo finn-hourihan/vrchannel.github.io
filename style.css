@@ -211,17 +211,21 @@ body{
 
 .aboutcontainer{
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
 }
 .aboutcontainer h1{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color:  rgb(255, 255, 255);
     color: black;
+    text-align: left;
+    padding-left: 175px;
 }
 
 .aboutcontainer h3{
+    text-align: right;
     color:rgb(234, 4, 27);
     font-size: 28px;
+    padding-right: 175px;
 }
 
 .btn{
@@ -325,11 +329,13 @@ body{
        font-size: 18px;
     
     }
-    .aboutcontainer{
-        font-size: 22px;
+    .aboutcontainer h1{
+        font-size: 36px;
+        padding-left: 50px;
     }
     .aboutcontainer h3{
         font-size: 16px;
+        padding-right: 50px;
     }
  
     .ss img{
@@ -385,13 +391,14 @@ body{
         font-size: 10px;
      
      }
-     .aboutcontainer{
-        font-size: 14px;
-        padding-left: 10px;
-        padding-right: 10px;
+     .aboutcontainer h1{
+        font-size: 20px;
+        padding-left: 30px;
+        
     }
     .aboutcontainer h3{
-        font-size: 10px;
+        font-size: 14px;
+        padding-right: 30px;
     }
      .ss img{
         width: 90%;
