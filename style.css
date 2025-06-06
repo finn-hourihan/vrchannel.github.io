@@ -228,6 +228,19 @@ body{
     padding-right: 175px;
 }
 
+.amp{
+    color:rgb(234, 4, 27);
+    text-align: center;
+
+}
+
+.cont{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:  rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+}
 .btn{
     padding: 0;
     border: none;
@@ -337,7 +350,13 @@ body{
         font-size: 16px;
         padding-right: 50px;
     }
- 
+    .cont{
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color:  rgb(255, 255, 255);
+        color: black;
+        text-align: center;
+        font-size: large;
+    }
     .ss img{
         width: 80%;
         margin: 5px;
@@ -384,6 +403,13 @@ body{
     .m1 {
         font-size: 25px;
     }
+
+    .amp img{
+        color:rgb(234, 4, 27);
+        text-align: center;
+        max-width: 360px;
+        height: auto;
+    }
     .outcontainer{
         font-size: 12px;
     }
@@ -399,6 +425,14 @@ body{
     .aboutcontainer h3{
         font-size: 14px;
         padding-right: 30px;
+    }
+  
+    .cont{
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color:  rgb(255, 255, 255);
+        color: black;
+        text-align: center;
+        font-size: medium;
     }
      .ss img{
         width: 90%;
@@ -461,5 +495,21 @@ body{
         width: auto;
         object-fit: contain;
         flex-shrink: 0;
+    }
+    .cont{
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color:  rgb(255, 255, 255);
+        color: black;
+        text-align: center;
+        font-size: small;
+    }
+    .aboutcontainer h1{
+        font-size: 20px;
+        padding-left: 25px;
+        
+    }
+    .aboutcontainer h3{
+        font-size: 14px;
+        padding-right: 25px;
     }
 }
