@@ -13,18 +13,18 @@
 }
 .imgtitle{
     height: auto;
-    width: 386px;
+    width: 230px;
     justify-content: left;
-    padding-top: 16px;
+    padding-top: 14px;
     /*transition: transform 0.3s ease;*/
   
 }
 
 .imgtitlesub{
     height: auto;
-    width: 386px;
+    width: 230px;
     justify-content: left;
-    padding-top: 16px;
+    padding-top: 14px;
     /*transition: transform 0.3s ease;*/
   
 }
@@ -84,7 +84,7 @@ body{
 }
 */
 .navtext{
-   padding-top: 60px; 
+   padding-top: 30px; 
 
 }
 .navbar a{
