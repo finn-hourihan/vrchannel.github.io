@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content= "script-src https://sdks.shopifycdn.com 'unsafe-inline';">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- style-src 'self' 'unsafe-inline'; -->
-  <!-- img-src 'self' data:;" -->
-
-<link rel="stylesheet" type="text/css" href="/style.css">
-<link rel="icon" type="image/png" href="/favicon.png">
-<title>vrchannel</title>
-
+<!-- content= "script-src https://sdks.shopifycdn.com 'unsafe-inline';" -->
+    <meta http-equiv="Content-Security-Policy" 
+        content="
+         default-src 'self';
+        script-src  'self'
+                    https://sdks.shopifycdn.com
+                    https://ajax.googleapis.com
+                    'unsafe-inline';
+        connect-src 'self'
+                    https://3xtmwz-s9.myshopify.com
+                    https://monorail-edge.shopifysvc.com;
+        style-src   'self'
+                    'unsafe-inline'
+                    http://fonts.googleapis.com
+                    https://fonts.googleapis.com;
+        font-src    'self'
+                    http://fonts.gstatic.com
+                    https://fonts.gstatic.com;
+        img-src     'self' data:;
+      ">
+    
+    <!-- style-src 'self' 'unsafe-inline'; -->
+    <!-- img-src 'self' data:;" -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>vrchannel</title>
 </head>
-<body class="bgcolor">
-      
+<body class="bgcolor">   
     <nav class="navbar">
             <ul>
             <li><a href="/"> <img class="imgtitlesub" src="/vrmaind.png" alt="logo fr"/></a></li>
@@ -36,6 +53,16 @@
             <img src="buck maybe.png">
             <img src= "tee maybe.png">
     </div>
+
+    <div class="product">
+            <div id="product-component-1749678694597"></div>
+
+    <script src="./item/buy-button.js" ></script>
+    </div>
+
+    
+    
+    
     <!-- <div id='product-component-1749678694597'>
 
     </div> -->
