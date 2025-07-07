@@ -2,34 +2,31 @@
  * @typedef {Object} ProductObject
  * @property {string} id Unique identifier for the product
  * @property {string} name Display Text of the product
+ * @property {string[]} description Array of strings for product description bullets
  * @property {string[]} images Array of image paths for the product @note first image is card image
  *  @note image paths must have a leading slash so they are not relative to the location of use
- * @property {string} buyButtonHtml HTML snippet for the Shopify Buy Button
- * @property {string[]} description Array of strings for product description bullets
+ *
+ * @property {string} buyButtonPath Path to the script generated from Shopify
+ * @property {string} buyButtonDiv string literal for the buy div as generated from Shopify
  */
+
+const buyButtonPath = "/shop/products/THIS_PRODUCT/buy-button.js"; // replace with product dir name for actual path to buy button script
+const shopifyID = "ADD_SHOPIFY_ID"; // ID for the product in Shopify
 
 /**
  * @exports @const {ProductObject} product
  */
-export default {
-  id: "vr-product-1",
-  name: "", // title of the product
-  images: [
-    // paths relative to your site root (or use absolute `/shop/...`)
-    /**
-     * @description first image in the images array is the card image
-     */
-    "shop/products/widget-001/widget-001-1.jpg",
-    "shop/products/widget-001/widget-001-2.jpg",
-  ],
-  buyButtonHtml: `
-    <div id="widget-001-buy-button">
-      <!-- your Shopify “Buy Button” snippet here -->
-    </div>
-  `,
+const PRODUCT_NAME = {
+  id: "SOME_UNIQUE_ID", // unique identifier for the product
+  name: "", // display text title of the product
   description: [
-    "⚙️ Precision-machined steel gears",
-    "💧 Water-resistant up to 30 m",
-    "🔋 Lasts 48 h on a single charge",
+    "ADD_DESCRIPTION", // description bullet 1
   ],
+  images: [
+    "/shop/products/THIS_PRODUCT/IMAGE_NAME", // main picture on card
+  ],
+  buyButtonPath: buyButtonPath, // replace with actual path to buy button script
+  buyButtonDiv: `<div id='product-component-${shopifyID}'></div>`,
 };
+
+export default PRODUCT_NAME;

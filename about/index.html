@@ -2,7 +2,29 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:;">
+
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:;"> -->
+ <meta http-equiv="Content-Security-Policy" 
+        content="
+         default-src 'self';
+        script-src  'self'
+                    https://sdks.shopifycdn.com
+                    https://ajax.googleapis.com
+                    'unsafe-inline';
+        connect-src 'self'
+                    https://3xtmwz-s9.myshopify.com
+                    https://monorail-edge.shopifysvc.com;
+        style-src   'self'
+                    'unsafe-inline'
+                    http://fonts.googleapis.com
+                    https://fonts.googleapis.com;
+        font-src    'self'
+                    http://fonts.gstatic.com
+                    https://fonts.gstatic.com;
+        img-src     'self' data:;
+      ">
+
+
 <link rel="stylesheet" type="text/css" href="/style.css">
 <link rel="icon" type="image/png" href="/favicon.png">
 <title>vrchannel</title>
@@ -73,9 +95,5 @@
          the spirit of creation. 
          'vr channel' is a haven for those who have chosen.-->
 
-    
- 
-    
-    
 </body>
 </html>

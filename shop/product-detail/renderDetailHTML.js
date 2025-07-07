@@ -1,3 +1,5 @@
+import utilShop from "../js/util.js";
+
 /**
  * @function renderDetailHTML
  * @description Renders the product detail view in the specified container
@@ -31,18 +33,21 @@ function renderDetailHTML(product, container) {
   });
   container.appendChild(ul);
 
+  const buyButton = utilShop.newBuyButton(product);
+  container.appendChild(buyButton);
+
   // 1) create the BUY BUTTON placeholder
   // get the buyButtonDiv
-  const buyContainer = document.createElement("div");
-  buyContainer.innerHTML = product.buyButtonDiv;
-  container.appendChild(buyContainer);
+  // const buyContainer = document.createElement("div");
+  // buyContainer.innerHTML = product.buyButtonDiv;
+  // container.appendChild(buyContainer);
 
-  //  create script tag to load the buy button
-  // 2) now create & append a real <script> node so it executes
-  const script = document.createElement("script");
-  script.src = product.buyButtonPath;
-  script.async = false; // preserve execution order if you need it
-  buyContainer.appendChild(script);
+  // //  create script tag to load the buy button
+  // // 2) now create & append a real <script> node so it executes
+  // const script = document.createElement("script");
+  // script.src = product.buyButtonPath;
+  // script.async = false; // preserve execution order if you need it
+  // buyContainer.appendChild(script);
 
   // const buyHolder = document.createElement('div');
   // buyHolder.id = product.buyButtonContainerId;
