@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+
+  <link rel="stylesheet" type="text/css" href="/shop/product-detail/styles.css">
+  <link rel="icon" type="image/icon" href="/favicon.png">
+
+  <title>vrchannel</title>
+  <meta http-equiv="Content-Security-Policy" 
+      content="
+      default-src 'self';
+      script-src  'self'
+                  https://sdks.shopifycdn.com
+                  https://ajax.googleapis.com
+                  'unsafe-inline';
+      connect-src 'self'
+                  https://3xtmwz-s9.myshopify.com
+                  https://monorail-edge.shopifysvc.com;
+      style-src   'self'
+                  'unsafe-inline'
+                  http://fonts.googleapis.com
+                  https://fonts.googleapis.com;
+      font-src    'self'
+                  http://fonts.gstatic.com
+                  https://fonts.gstatic.com;
+      img-src     'self' data:;
+    ">
+    
+  <!-- <link rel="stylesheet" type="text/css" href="/style.css"> -->
+  <!-- <link rel="icon" type="image/png" href="/favicon.png"> -->
+</head>
+
+
+<body style="background-color: black;">
+  <nav class="navbar">
+     <ul>
+        <li><a href="/"> <img class="imgtitlesub" src="/vrmaind.png" alt="logo fr"/></a></li>
+        <li class="navtext"><a href="/shop/" class="active">SHOP</a></li>
+        <li class="navtext"><a href="/game/" >GAME</a></li>
+        <li class="navtext"><a href="/works/">WORKS</a></li>
+        <li class="navtext"><a href="/about/">ABOUT</a></li>
+        <li class="navtext"><a href="https://industryplant.co">IP</a></li>
+      </ul>
+  </nav> 
+
+  <main>
+    <div id="product-detail-container"></div>
+  </main>
+  <script type="module" src="/shop/product-detail/renderDetail.js"></script>
+
+
+    <!-- <div id='product-component-1751834784986'></div>
+    <script src=shop/products/bucket-hat/buy-button.js> </script> -->
+</body>
+
+</html>

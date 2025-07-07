@@ -1,6 +1,6 @@
 // <!-- <script type="text/javascript"> -->
 
-console.log("but-button.js loaded");
+console.log("buy-button.js loaded");
 /*<![CDATA[*/
 (function () {
   var scriptURL =

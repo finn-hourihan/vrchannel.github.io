@@ -1,3 +1,5 @@
+console.log("buy-button.js loaded");
+
 /*<![CDATA[*/
 (function () {
   var scriptURL =

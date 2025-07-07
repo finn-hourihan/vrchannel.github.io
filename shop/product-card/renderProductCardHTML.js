@@ -2,21 +2,23 @@
 function renderCard(product) {
   return `
       <h2 class="product-card__title">${product.name}</h2>
-      <img 
-        class="product-card__image"
-        src="${product.images[0]}"
-        alt="${product.name}"
-      >
+      <div>
+        <img 
+          class="product-card__image"
+          src="${product.images[0]}"
+          alt="${product.name}"
+        >
+      </div>
     `;
 }
 
 /**
- * @function createProductCard()
+ * @function renderProductCardHTML()
  * @description Creates a product card element for a given product
  * @param {Object} product
  * @returns {HTMLElement} The created product card element
  */
-export function createProductCard(product) {
+export function renderProductCardHTML(product) {
   const card = document.createElement("div");
   card.className = "product-card";
   card.innerHTML = renderCard(product);
@@ -29,7 +31,7 @@ export function createProductCard(product) {
 
   // when clicked, go to product.html?id=<product.id>
   card.addEventListener("click", () => {
-    window.location.href = `product.html?id=${encodeURIComponent(product.id)}`;
+    window.location.href = `/shop/item/?id=${encodeURIComponent(product.id)}`;
   });
 
   return card;

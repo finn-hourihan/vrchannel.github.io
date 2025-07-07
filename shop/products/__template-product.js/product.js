@@ -3,6 +3,7 @@
  * @property {string} id Unique identifier for the product
  * @property {string} name Display Text of the product
  * @property {string[]} images Array of image paths for the product @note first image is card image
+ *  @note image paths must have a leading slash so they are not relative to the location of use
  * @property {string} buyButtonHtml HTML snippet for the Shopify Buy Button
  * @property {string[]} description Array of strings for product description bullets
  */

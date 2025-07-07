@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/shop/product-card/styles.css">
+
 
 <!-- content= "script-src https://sdks.shopifycdn.com 'unsafe-inline';" -->
     <meta http-equiv="Content-Security-Policy" 
@@ -30,35 +32,61 @@
     <link rel="icon" type="image/png" href="/favicon.png">
     <title>vrchannel</title>
 </head>
+
 <body class="bgcolor">   
     <nav class="navbar">
-            <ul>
+        <ul>
             <li><a href="/"> <img class="imgtitlesub" src="/vrmaind.png" alt="logo fr"/></a></li>
             <li class="navtext"><a href="" class="active">SHOP</a></li>
             <li class="navtext"><a href="/game/">GAME</a></li>
             <li class="navtext"><a href="/works/">WORKS</a></li>
             <li class="navtext"><a href="/about/">ABOUT</a></li>
             <li class="navtext"><a href="https://industryplant.co">IP</a></li>
-            </ul>
+        </ul>
     </nav> 
 
     <marquee scrollamount="20" class="m1">stay tuned because up next we got some brand new threads... ~ ~ ~ ~ ~ these aint your average gildans, son... ~ ~ ~ ~ ~ or are they???  ~ ~ ~ ~ ~ 
         tell your mother and her friends...  ~ ~ ~ ~ ~ been trying to break into the women aged 40-60 market sector...  ~ ~ ~ ~ ~ no but fr tho...  ~ ~ ~ ~ ~ june 2025 wait on it... 
     </marquee>
-<br>
+    <br>
+
+
+    <main>
+        <div id="products-container"></div>
+    </main>
+    <script type="module" src="/shop/product-card/renderCards.js"></script>
+    
+
+    </body>
+</html>
+
+
+
+    <!-- 
+        LEGACY BELOW 
+    
+    
+
+
+
+    -->
+<!-- 
+
     <p class="outcontainersmall">ahhh cmon now you know i gotta do the low hangin fruit haha. just paste the logo anywhere lol<br> 
     but fr not sure if these are gonna get made just wanted to throw somthin fun up here<br>
     </p>
-    <div class="product">
-            <img src="buck maybe.png">
-            <img src= "tee maybe.png">
-    </div>
+
 
     <div class="product">
-            <div id="product-component-1749678694597"></div>
-
-    <script src="./item/buy-button.js" ></script>
+        <img src="buck maybe.png">
+        <img src= "tee maybe.png">
     </div>
+
+    <div class="product"> -->
+            
+    <!-- <div id="product-component-1749678694597"></div>
+    <script src="./item/buy-button.js" ></script> -->
+    <!-- </div> -->
 
     
     
@@ -77,9 +105,3 @@
             </span>
         </div>
     </div>-->
-    
- 
-    
-    
-</body>
-</html>
