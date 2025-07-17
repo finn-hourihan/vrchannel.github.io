@@ -1,34 +1,88 @@
-#products-container {
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+@font-face {
+    font-family: Gaz;
+    src: url(Gaz.ttf);
 }
 
-.product-card {
-  padding: 2em;
-  width: 550px;
-  margin-bottom: 20px;
-  justify-items: center;
-  justify-self: center;
-  cursor: pointer; /* makes the hover cursor a pointer as if it were a link */
+#products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 
-  /* auto generated styles */
-  border: 1px solid #eee;
-  border-radius: 6px;
-  overflow: hidden;
+
+
+
+.product-card {
+  width: 100%;
+  max-width: 450px;  /* Smaller than 550px */
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin: 0 auto;  /* Center it with auto margins */
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ensures children (image, title) stay centered */
+  box-sizing: border-box;
 }
 
 .product-card__title {
-  color: white;
-  font-weight: bold;
-  margin: 12px 0px;
-
-  /* font-size: 18px; */
+  font-family: 'Gaz';
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  -webkit-text-stroke: 1px white;
+  color: black;
+  font-weight: 400;
 }
 
 .product-card__image {
-  max-height: 500px;
-  max-width: 500px;
+  width: 100%;
+  max-width: 100%;
   height: auto;
+  border: 3px solid #ffffff;
+  display: block;
+
+}
+
+.product-card__price{
+  font-family: 'Gaz';
+  font-size: 35px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  -webkit-text-stroke: 1px white;
+  color: black;
+  font-weight: 400;
+}
+
+.product-card:hover {
+  border: 3px solid #ea041b;
+}
+
+
+.product-card:hover .product-card__image{
+  border: 3px solid #ea041b;
+}
+
+.product-card:hover .product-card__title {
+  -webkit-text-stroke-color: #ea041b;
+}
+
+.product-card:hover .product-card__price {
+  -webkit-text-stroke-color: #ea041b;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  #products-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
 }

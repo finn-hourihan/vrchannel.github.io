@@ -1,13 +1,15 @@
 // fill in HTML
 function renderCard(product) {
   return `
-      <h2 class="product-card__title">${product.name}</h2>
-      <div>
+      
+      <div class="product-card__content">
+        <h2 class="product-card__title">${product.name}</h2>
         <img 
           class="product-card__image"
           src="${product.images[0]}"
           alt="${product.name}"
         >
+        <h3 class="product-card__price">${product.price}</h3>
       </div>
     `;
 }

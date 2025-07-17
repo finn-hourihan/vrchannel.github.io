@@ -2,15 +2,11 @@
 
 
 #product-detail-container{
-  color: white;
+  color: #ea041b;
   padding: 4rem;
   
 }
 
-#product-detail-container  h1: {
-    color: white;
- }
- 
 .product-detail__images{
 
 }

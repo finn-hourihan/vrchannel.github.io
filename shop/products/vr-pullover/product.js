@@ -10,26 +10,26 @@
  * @property {string} buyButtonDiv string literal for the buy div as generated from Shopify
  */
 
-const buyButtonPath = "/shop/products/THIS_PRODUCT/buy-button.js"; // replace with product dir name for actual path to buy button script
-const shopifyID = "ADD_SHOPIFY_ID"; // ID for the product in Shopify
+const buyButtonPath = "/shop/products/vr-pullover/buy-button.js"; // replace with product dir name for actual path to buy button script
+const shopifyID = "7961166807097"; // ID for the product in Shopify
 
 /**
- * @exports @const {ProductObject} product
+ * @exports @const {ProductObject} vrPullover
  */
-const PRODUCT_NAME = {
-  id: "SOME_UNIQUE_ID", // unique identifier for the product
-  name: "", // display text title of the product
+const vrPullover = {
+  id: "vr-pullover", // unique identifier for the product
+  name: "Pullover", // display text title of the product
   price: [
     "5.99", //price
   ],
   description: [
-    "ADD_DESCRIPTION", // description bullet 1
+    "it is cool, asnd red", "design is placeholder", // description bullet 1
   ],
   images: [
-    "/shop/products/THIS_PRODUCT/IMAGE_NAME", // main picture on card
+    "/shop/products/vr-pullover/pullover no.png", // main picture on card
   ],
   buyButtonPath: buyButtonPath, // replace with actual path to buy button script
   buyButtonDiv: `<div id='product-component-${shopifyID}'></div>`,
 };
 
-export default PRODUCT_NAME;
+export default vrPullover;

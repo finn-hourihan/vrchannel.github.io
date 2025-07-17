@@ -8,14 +8,18 @@ const shopifyID = "1751834784986"; // This is the ID for the product in Shopify
  */
 const vrTee = {
   id: "vr-tee-1",
-  name: "VR Tee",
+  name: "VR-T0",
+   price: [
+    "$0.17", //price
+  ],
   description: [
-    "Precision-machined steel gears",
+    "thick asl",
     "Water-resistant up to 30 m",
     "Lasts 48 h on a single charge",
   ],
   images: [
-    `/shop/products/vr-tee-1/tee maybe.png`, // main picture on card
+    `/shop/products/vr-tee-1/tee maybe.png`,
+    `/shop/products/vr-tee-1/tee maybe1.png`, // main picture on card
     // '',
   ],
 

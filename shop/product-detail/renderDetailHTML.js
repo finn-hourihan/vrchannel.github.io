@@ -12,6 +12,11 @@ function renderDetailHTML(product, container) {
   h1.textContent = product.name;
   container.appendChild(h1);
 
+  // Price
+  const h4 = document.createElement("h4");
+  h4.textContent = product.price;
+  container.appendChild(h4);
+
   // Images
   const imagesDiv = document.createElement("div");
   imagesDiv.className = "product-detail__images";

@@ -10,7 +10,7 @@ const shopifyID = "1751834368190"; // This is the ID for the product in Shopify
  */
 const bucketHatProduct = {
   id: "bucket-hat",
-  name: "VR Bucket Hat",
+  name: "Bucket Hat",
   images: [
     // paths relative to your site root (or use absolute `/shop/...`)
     /**
@@ -27,7 +27,9 @@ const bucketHatProduct = {
     <div id='product-component-1751834368190'></div>
     <script src=${buyButtonPath} > </script>    
   `, */
-
+  price: [
+    "$9,999.99", //price
+  ],
   description: ["~ swag", "~ style", "~ comfort", "~ bucket hat"],
 };
 
