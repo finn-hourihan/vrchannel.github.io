@@ -1,5 +1,45 @@
 import utilShop from "../js/util.js";
 
+function createImagesViewer(product){
+  const images = product.images
+  const initialImage = images[0]
+  //const imagesViewer = document.createElement("div")
+  const mainImage = document.createElement("img")
+  const newImageViewerHTML = (mainImageHTML, imgSelect) => {
+    return(
+      `<div>
+        ${mainImageHTML}
+          ${imgSelect}
+       </div>
+      `
+    )
+  }
+
+  mainImage.src=initialImage
+  mainImage.className = "images-viewer-main-image"
+
+  const imageSelector = document.createElement("div")
+  imageSelector.className = "images-viewer-img-select"
+
+  //imageSelector.innerHTML = 
+  images.forEach((src, idx) => {
+    const microImage = document.createElement("img")
+    microImage.className = "images-viewer-micro-image"
+    microImage.src = src
+    microImage.addEventListener("click", () => {
+      mainImage.src = src
+    });
+    imageSelector.appendChild(microImage)
+  })
+
+  //const imagesViewerHTML =  newImageViewerHTML(mainImage, imageSelector)
+  const imagesViewerHTML =  document.createElement("div") 
+  imagesViewerHTML.appendChild(mainImage)
+  imagesViewerHTML.appendChild(imageSelector)
+  return imagesViewerHTML
+}
+
+
 /**
  * @function renderDetailHTML
  * @description Renders the product detail view in the specified container
@@ -10,22 +50,23 @@ function renderDetailHTML(product, container) {
   // Title
   const h1 = document.createElement("h1");
   h1.textContent = product.name;
-  container.appendChild(h1);
+  //container.appendChild(h1);
 
   // Price
   const h4 = document.createElement("h4");
   h4.textContent = product.price;
-  container.appendChild(h4);
+  //container.appendChild(h4);
 
   // Images
   const imagesDiv = document.createElement("div");
   imagesDiv.className = "product-detail__images";
-  product.images.forEach((src) => {
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = product.name;
-    imagesDiv.appendChild(img);
-  });
+  imagesDiv.appendChild(createImagesViewer(product))
+  // product.images.forEach((src) => {
+  //   const img = document.createElement("img");
+  //   img.src = src;
+  //   img.alt = product.name;
+  //   imagesDiv.appendChild(img);
+  // });
   container.appendChild(imagesDiv);
 
   // Description bullets
@@ -36,10 +77,21 @@ function renderDetailHTML(product, container) {
     li.textContent = text;
     ul.appendChild(li);
   });
-  container.appendChild(ul);
+  //container.appendChild(ul);
 
   const buyButton = utilShop.newBuyButton(product);
-  container.appendChild(buyButton);
+  //container.appendChild(buyButton);
+
+
+  const itemDetailsDiv = document.createElement("div");
+  itemDetailsDiv.className = "product-info__container";
+  itemDetailsDiv.appendChild(h1)
+  itemDetailsDiv.appendChild(h4)
+  itemDetailsDiv.appendChild(ul)
+  itemDetailsDiv.appendChild(buyButton)
+  container.appendChild(itemDetailsDiv)
+
+
 
   // 1) create the BUY BUTTON placeholder
   // get the buyButtonDiv

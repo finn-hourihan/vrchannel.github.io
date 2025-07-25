@@ -1,16 +1,75 @@
 
+@font-face {
+    font-family: Gaz;
+    src: url(Gaz.ttf);
+}
 
 
 #product-detail-container{
-  color: #ea041b;
-  padding: 4rem;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  padding-bottom: 3rem;
+  padding-right: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#product-detail-container h1{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ea041b;
+  font-size: 80px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: 'Gaz'
   
 }
 
-.product-detail__images{
+#product-detail-container h4{
+  color: #ffffff;
+  font-size: 28px;
+  
+}
+
+/* .product-detail__images img{
+  width: 600px;
+  height: auto;
+  max-width: 50%;
+} */
+
+.product-detail__description{
+ color: #ea041b;
+}
+
+.backbutton-img{
+  width: 100px;
+  height: auto;
+  max-width: 90%;
+  min-width: 38px;
+}
+
+.backbutton-img:hover{
+    content: url("/shop/item/backarrowdr.png");
+  
+}
+
+.backbutton-img:active{
+    content: url("/shop/item/backarrow.png");
+  
+}
+
+
+
+.images-viewer-img-select{
 
 }
 
-.product-detail__description{
+.images-viewer-main-image{
+  width: 600px;
+  height: auto;
+}
 
+.images-viewer-micro-image{
+ width: 100px;
+ height: auto;
+ cursor: pointer;
 }
