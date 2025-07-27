@@ -77,12 +77,27 @@
   -webkit-text-stroke-color: #ea041b;
 }
 
+.product-card:active .product-card__title{
+    color: #ea041b;
+    -webkit-text-stroke-color: none;
+}
 
+.product-card:active .product-card__price{
+    color: #ea041b; 
+    -webkit-text-stroke-color: none;
+}
 
 
 @media screen and (max-width: 768px) {
   #products-container {
     grid-template-columns: 1fr;
     padding: 1rem;
+    gap: 4rem;
   }
+
+  .product-card {
+  width: 100%;
+  max-width: 300px;  /* Smaller than 550px */
+  
+}
 }

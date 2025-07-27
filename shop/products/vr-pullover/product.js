@@ -11,7 +11,7 @@
  */
 
 const buyButtonPath = "/shop/products/vr-pullover/buy-button.js"; // replace with product dir name for actual path to buy button script
-const shopifyID = "7961166807097"; // ID for the product in Shopify
+const shopifyID = "1753487899566"; // ID for the product in Shopify
 
 /**
  * @exports @const {ProductObject} vrPullover
@@ -23,10 +23,11 @@ const vrPullover = {
     "5.99", //price
   ],
   description: [
-    "it is cool, asnd red", "design is placeholder", // description bullet 1
+    "it is cool, asnd red", "design is placeholder", "design is lmao"// description bullet 1
   ],
   images: [
     "/shop/products/vr-pullover/pullover no.png", // main picture on card
+    "/shop/products/vr-pullover/pullover no1.png", // main picture on card
   ],
   buyButtonPath: buyButtonPath, // replace with actual path to buy button script
   buyButtonDiv: `<div id='product-component-${shopifyID}'></div>`,

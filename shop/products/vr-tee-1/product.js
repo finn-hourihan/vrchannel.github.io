@@ -19,7 +19,13 @@ const vrTee = {
   ],
   images: [
     `/shop/products/vr-tee-1/tee maybe.png`,
-    `/shop/products/vr-tee-1/tee maybe1.png`, // main picture on card
+    `/shop/products/vr-tee-1/tee maybe1.png`, 
+    `/shop/products/vr-tee-1/tee maybe2.png`,
+    `/shop/products/vr-tee-1/tee maybe3.png`,
+    `/shop/products/vr-tee-1/tee maybe4.png`,
+    
+    
+    
     // '',
   ],
 
